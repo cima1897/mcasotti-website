@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Video editing">
+    <title>mattia casotti | about</title>
+    
+    <link rel="stylesheet" href="https://inputusername.github.io/zola-hook/style.css?h=60eb954a41494c36423228b3dcb5c7ea399b7f762dcae13cb546218683e85de7">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;inputusername.github.io&#x2F;zola-hook&#x2F;">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1>about</h1>
+    
+    <div class="space"></div>
+    <p>Reggio Emilia, Italia. 1987.</p>
+<div class="doublespace"></div>
+<h2 id="contatti">contatti</h2>
+<p>mattiacasotti[at]pm.me<br>
+<a href="https://livellosegreto.it/@cima">mastodon</a></p>
+<div class="doublespace"></div>
+<h2 id="esperienze-lavorative">esperienze lavorative</h2>
+<p>
+<h3 id="luglio-2015-oggi-indacolab">luglio 2015 - oggi / <a href="https://www.indaco.com/">indacolab</a></h3>
+<h4 id="post-produzione-direzione-artistica-copywriting">— post produzione / direzione artistica / copywriting</h4>
+<h4 id="clienti-selezionati">clienti selezionati<br></h4>
+<p><i>Juventus FC <br>
+Jeep <br>
+Ducati <br>
+Elite cycling accessories <br>
+Brooks</i><br></p>
+<h3 id="2012-2015-freelance-videomaking">2012 - 2015 Freelance videomaking</h3>
+<h4 id="video-maker">— Video maker</h4>
+<h4 id="clienti-selezionati-1">clienti selezionati <br></h4>
+<p><i>Comune di Reggio Emilia <br>
+Comune di Mantova <br>
+Fondazione per lo sport del comune di Reggio Emilia</i> <br></p>
+<h3 id="2009-2010-ufficio-giovani-del-comune-di-reggio-emilia">2009 - 2010 ufficio giovani del comune di Reggio Emilia</h3>
+<h4 id="content-creator-smm">— Content creator / SMM</h4>
+<p>Copywriting, organizzazione e creazione dei contenuti, editor del sito internet e dei canali social dell'istituzione. </p>
+<div class="doublespace"></div>
+<h2 id="istruzione">istruzione</h2>
+<h3 id="2012-2014-iuav">2012 — 2014 IUAV</h3>
+<p>Laurea II°livello in Arti visive</p>
+<h3 id="2007-2011-universita-di-parma">2007 — 2011 Università di Parma</h3>
+<p>Laurea I°livello in Arte e nuovi media</p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://inputusername.github.io/zola-hook/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://inputusername.github.io/zola-hook/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>
